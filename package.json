@@ -1,0 +1,41 @@
+{
+    "name": "package-helper",
+    "version": "1.0.0",
+    "description": "A package helper ... package :)",
+    "scripts": {
+        "build": "rimraf dist && babel src --out-dir dist --copy-files",
+        "build:watch": "rimraf dist && babel src --out-dir dist --copy-files --watch"
+    },
+    "bin": {
+        "cccisd-package-build": "dist/bin/build.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "babel": {
+        "presets": [
+            "es2015"
+        ]
+    },
+    "dependencies": {
+        "babel-cli": "6.24.1",
+        "babel-jest": "20.0.3",
+        "babel-polyfill": "6.23.0",
+        "babel-preset-cccisd": "2.0.1",
+        "bootstrap": "3.3.7",
+        "cccisd-eslint": "^1.0.0",
+        "colors": "^1.1.2",
+        "cross-spawn": "5.1.0",
+        "enzyme": "2.9.1",
+        "enzyme-to-json": "1.5.1",
+        "husky": "0.13.3",
+        "identity-obj-proxy": "3.0.0",
+        "jest": "20.0.4",
+        "jquery": "2.1.4",
+        "lodash": "4.17.4",
+        "prettier": "1.8.2",
+        "react": "15.6.1",
+        "react-dom": "15.6.1",
+        "react-test-renderer": "15.6.1",
+        "rimraf": "2.6.1"
+    }
+}
