@@ -7,9 +7,6 @@
         "build:watch":
             "rimraf dist && babel src --out-dir dist --copy-files --watch"
     },
-    "bin": {
-        "cccisd-package-build": "dist/bin/build.js"
-    },
     "author": "",
     "license": "ISC",
     "dependencies": {
